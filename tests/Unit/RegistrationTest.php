@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 test('user-registration-success', function () {
     $userData = [
-        'email' => 'test@gmail.com',
+        'email' => 'test45@gmail.com',
         'password' => '123456',
         'password_confirmation' => '123456',
         'name' => 'John Doe',

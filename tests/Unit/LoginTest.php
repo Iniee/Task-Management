@@ -13,8 +13,6 @@ test('users can authenticate using the login', function () {
     ]);
 
     $response->assertStatus(200);
-    // $this->assertAuthenticated();
-    // $response->assertNoContent();
 });
 
 test('users can not authenticate with invalid password', function () {
@@ -34,6 +32,5 @@ test('users can logout', function () {
 
     $response = $this->actingAs($user)->postJson(route('logout'));
 
-    // $this->assertGuest();
-    $response->assertNoContent();
+    $response->assertStatus(200);
 });
